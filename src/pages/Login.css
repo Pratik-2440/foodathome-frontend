@@ -1,0 +1,238 @@
+/* ================= ROOT ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #fff3e0, #ffffff);
+}
+
+/* ================= CONTAINER ================= */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ================= CARD ================= */
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 35px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.6s ease;
+}
+
+/* ================= HEADING ================= */
+.login-box h2 {
+  text-align: center;
+  color: #ff7a00;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* ================= INPUT ================= */
+.login-box input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 2px rgba(255, 122, 0, 0.15);
+}
+
+/* ================= BUTTON ================= */
+.login-box button {
+  width: 100%;
+  background: #ff7a00;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #e56c00;
+  transform: translateY(-1px);
+}
+
+/* ================= LINKS ================= */
+.login-links {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-links a {
+  color: #ff7a00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= MESSAGE ================= */
+.success-msg {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.error-msg {
+  background: #fdecea;
+  color: #d32f2f;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 30px 25px;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 25px 20px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .login-box input,
+  .login-box button {
+    font-size: 14px;
+  }
+}
+/* ================= BUTTON BASE ================= */
+button {
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* ================= PRIMARY BUTTON ================= */
+.btn-primary {
+  width: 100%;
+  background: #ff7a00;
+  color: #fff;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background: #e56c00;
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ================= SECONDARY BUTTON ================= */
+.btn-secondary {
+  width: 100%;
+  background: #fff3e0;
+  color: #ff7a00;
+  padding: 13px;
+  border: 1px solid #ff7a00;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.btn-secondary:hover {
+  background: #ff7a00;
+  color: white;
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.25);
+}
+
+/* ================= LINK BUTTON ================= */
+.btn-link {
+  background: none;
+  border: none;
+  color: #ff7a00;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  color: #e56c00;
+}
+
+/* ================= DANGER BUTTON ================= */
+.btn-danger {
+  width: 100%;
+  background: #ff3d00;
+  color: #fff;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-danger:hover {
+  background: #d32f2f;
+  box-shadow: 0 6px 15px rgba(211, 47, 47, 0.35);
+}
+
+
+/* ================= FORGOT PASSWORD LINK ================= */
+.forgot-link {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: #ff7a00;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+  color: #e56c00;
+}
