@@ -28,4 +28,4 @@ export const checkUsernameExists = (username) =>
   api.get(`/api/users/exists/username/${username}`);
 
 
-export default api;
+export default api   ;
